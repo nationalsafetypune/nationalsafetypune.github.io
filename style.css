@@ -410,15 +410,15 @@ header {
 }
 
 #fire-protection {
-  background-image: url("https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/banner4.jpg?v=1737983536494");
+  background-image: url("Event_Banner_1.jpg");
 }
 
 #fire-prevention {
-  background-image: url("https://cdn.glitch.global/2aef1b00-f4cb-445e-98f0-b62bcbc4bf0a/pngtree-3d-render-of-fire-extinguisher-against-blaze-background-image_3811144.jpg?v=1736600692099");
+  background-image: url("Event_Banner_2.jpg");
 }
 
 #fire-suppression {
-  background-image: url("https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/banner%203.jpg?v=1737983968039");
+  background-image: url("Event_Banner_1.jpg");
 }
 
 /* Make sure text is above the overlay */
