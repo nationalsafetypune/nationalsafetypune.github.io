@@ -7,20 +7,30 @@
 
 /* Body Styling ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 body {
-  font-family: 'Poppins', sans-serif, Arial, Helvetica;
+  font-family: "Poppins", sans-serif, Arial, Helvetica;
   color: #333;
   background-color: #f9f9f9;
   line-height: 1.6;
 }
 
 /* Heading Styling ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   position: relative;
   color: #ffffff; /* Default text color */
   text-align: center; /* Optional: Center-align all headings */
 }
 
-h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
+h1::after,
+h2::after,
+h3::after,
+h4::after,
+h5::after,
+h6::after {
   content: "";
   display: block;
   width: 50%; /* Adjust the width of the line */
@@ -29,7 +39,6 @@ h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
   margin: 10px auto 0; /* Space around the line */
   border-radius: 5px; /* Smooth edges */
 }
-
 
 /* Loading Screen*/
 
@@ -136,9 +145,8 @@ h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
 
 /* Responsiveness for mobile: Hide text, show icons */
 @media (max-width: 768px) {
-  .preheader{
+  .preheader {
     padding: 8px 20px;
-    
   }
   /* Contact - Mobile Responsiveness */
   .preheader .contact {
@@ -221,19 +229,17 @@ header {
 
 .nav-links {
   margin-right: 50px;
-
-
 }
 @media only screen and (min-width: 1024px) {
   .nav-links {
-  margin-right: 50px;
-  display: block !important;
-}
+    margin-right: 50px;
+    display: block !important;
+  }
 }
 /* When the menu is active, display it */
 .nav-links.active {
   display: block;
-} 
+}
 
 .nav-links a {
   padding: 12px;
@@ -241,7 +247,6 @@ header {
   color: darkblue;
   font-size: 1rem;
   transition: color 0.3s;
-  
 }
 
 .nav-links a:hover {
@@ -339,15 +344,8 @@ header {
   }
 }
 
-
-
-
-
-
-
 /* Home Section////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-*/
-.home-section {
+*/ .home-section {
   position: relative;
   height: 80vh;
   display: flex;
@@ -387,17 +385,10 @@ header {
   transition: opacity 1s ease-in-out;
 }
 
-
-
-
-
-
-
-
-
-
 /* Individual items with background images */
-#fire-protection, #fire-prevention, #fire-suppression {
+#fire-protection,
+#fire-prevention,
+#fire-suppression {
   position: relative;
   background-size: cover;
   background-position: center;
@@ -408,7 +399,7 @@ header {
 #fire-protection::before,
 #fire-prevention::before,
 #fire-suppression::before {
-  content: ''; /* Required for the pseudo-element to show */
+  content: ""; /* Required for the pseudo-element to show */
   position: absolute;
   top: 0;
   left: 0;
@@ -419,20 +410,24 @@ header {
 }
 
 #fire-protection {
-  background-image: url('https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/banner4.jpg?v=1737983536494');
+  background-image: url("https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/banner4.jpg?v=1737983536494");
 }
 
 #fire-prevention {
-  background-image: url('https://cdn.glitch.global/2aef1b00-f4cb-445e-98f0-b62bcbc4bf0a/pngtree-3d-render-of-fire-extinguisher-against-blaze-background-image_3811144.jpg?v=1736600692099');
+  background-image: url("https://cdn.glitch.global/2aef1b00-f4cb-445e-98f0-b62bcbc4bf0a/pngtree-3d-render-of-fire-extinguisher-against-blaze-background-image_3811144.jpg?v=1736600692099");
 }
 
 #fire-suppression {
-  background-image: url('https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/banner%203.jpg?v=1737983968039');
+  background-image: url("https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/banner%203.jpg?v=1737983968039");
 }
 
 /* Make sure text is above the overlay */
-#fire-protection h2, #fire-prevention h2, #fire-suppression h2,
-#fire-protection p, #fire-prevention p, #fire-suppression p {
+#fire-protection h2,
+#fire-prevention h2,
+#fire-suppression h2,
+#fire-protection p,
+#fire-prevention p,
+#fire-suppression p {
   position: relative;
   z-index: 200; /* Text should be above the overlay */
   color: white; /* Ensure text is visible on dark background */
@@ -440,32 +435,29 @@ header {
 
 /* Media Queries for responsiveness */
 @media screen and (max-width: 1024px) {
-  #fire-protection, #fire-prevention, #fire-suppression {
+  #fire-protection,
+  #fire-prevention,
+  #fire-suppression {
     height: 400px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #fire-protection, #fire-prevention, #fire-suppression {
+  #fire-protection,
+  #fire-prevention,
+  #fire-suppression {
     height: 300px;
   }
 }
 
-
-
-
-
-
 /* Headings and paragraphs */
 h2 {
   font-size: 2.5rem;
-  
 }
 
 p {
   font-size: 1.2rem;
   max-width: 600px;
-  text-
 }
 
 /* Navigation buttons */
@@ -497,12 +489,12 @@ p {
 /* Tablet (max-width: 1024px) */
 @media screen and (max-width: 1024px) {
   .home-section {
-    height: 60vh;  /* Adjust height on tablets */
+    height: 60vh; /* Adjust height on tablets */
   }
 
   .carousel-container {
     width: 95%;
-    height: 70%;  /* Slightly smaller carousel container */
+    height: 70%; /* Slightly smaller carousel container */
   }
 
   .carousel-item h2 {
@@ -522,12 +514,12 @@ p {
 /* Mobile (max-width: 768px) */
 @media screen and (max-width: 768px) {
   .home-section {
-    height: 100vh;  /* Adjust height for mobile */
+    height: 100vh; /* Adjust height for mobile */
   }
 
   .carousel-container {
     width: 100%;
-    height: 100%;  /* Carousel takes more space */
+    height: 100%; /* Carousel takes more space */
   }
 
   .carousel-item h2 {
@@ -536,26 +528,26 @@ p {
 
   .carousel-item p {
     font-size: 1rem;
-    padding-left:20%;
-    padding-right:20%;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 
   .arrow {
     font-size: 1.5rem;
     padding: 8px 20px;
-    border-radius:50%;
+    border-radius: 50%;
   }
 }
 
 /* Very small screens (max-width: 480px) */
 @media screen and (max-width: 480px) {
   .home-section {
-    height: 40vh;  /* Even smaller height for very small screens */
+    height: 40vh; /* Even smaller height for very small screens */
   }
 
   .carousel-container {
     width: 100%;
-    height: 100%;  /* Carousel takes more space */
+    height: 100%; /* Carousel takes more space */
   }
 
   .carousel-item h2 {
@@ -572,16 +564,10 @@ p {
   }
 }
 
-
-
-
-
-
 /* About Section Styling ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .about-section {
   margin-top: 50px;
   background-color: #fff;
-  
 }
 
 .container {
@@ -662,19 +648,19 @@ p {
 
 /* Responsiveness for mobile */
 @media (max-width: 768px) {
-  .about-section{
-    margin-left:20px;
-    margin-right:20px;
-    text-align:justify;
+  .about-section {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
   }
-  
+
   .about-content h1 {
-    font-size:30px;
+    font-size: 30px;
   }
-spacing  .about-content p {
-  margin-bottom: 15px;
-  font-size: 15px;
-}
+  spacing .about-content p {
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
   .collage {
     flex-direction: column; /* Stack everything vertically on mobile */
   }
@@ -690,13 +676,13 @@ spacing  .about-content p {
 }
 
 @media (max-width: 480px) {
-  .about-section{
-    margin-left:20px;
+  .about-section {
+    margin-left: 20px;
   }
   .small-images img {
-    align:center;
-    width:100%; /* Make the images take full width on very small screens */
-    height:250px;
+    align: center;
+    width: 100%; /* Make the images take full width on very small screens */
+    height: 250px;
   }
 }
 
@@ -708,7 +694,7 @@ spacing  .about-content p {
   justify-content: space-around;
   gap: 70px;
   padding: 60px 160px;
-  background-color: #003366; 
+  background-color: #003366;
   text-align: center;
 }
 
@@ -718,7 +704,7 @@ spacing  .about-content p {
   /* Add shadow effect */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  background-color: #fff; 
+  background-color: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -732,14 +718,12 @@ spacing  .about-content p {
   font-size: 40px;
   font-weight: bold;
   color: #d32f2f; /* Updated counter number color: Red */
-  
 }
 
 .counter-item p {
   margin-top: 10px;
   font-size: 18px;
   color: #374151; /* Updated text color: Dark Gray */
-  
 }
 
 .plus-sign {
@@ -809,19 +793,6 @@ spacing  .about-content p {
     margin: 10px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Esteemed Clients Section */
 .esteemed-guests-section {
@@ -917,7 +888,10 @@ spacing  .about-content p {
   .carousel {
     gap: 10px;
     padding: 10px;
-    grid-template-columns: repeat(3, 1fr); /* 3 logos per row on medium screens */
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* 3 logos per row on medium screens */
   }
 
   .logo-box {
@@ -937,7 +911,10 @@ spacing  .about-content p {
   .carousel {
     gap: 8px;
     padding: 8px;
-    grid-template-columns: repeat(2, 1fr); /* 2 logos per row on small screens */
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 logos per row on small screens */
   }
 
   .logo-box {
@@ -948,31 +925,6 @@ spacing  .about-content p {
     font-size: 25px;
   }
 }
-
-
-
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-
-
 
 /*servies*/
 
@@ -1059,7 +1011,7 @@ spacing  .about-content p {
 .hover-overlay p {
   font-size: 1rem;
   line-height: 1.5;
-  text-align:bottom;
+  text-align: bottom;
 }
 
 /* Show Overlay on Hover */
@@ -1070,8 +1022,6 @@ spacing  .about-content p {
 .service-card:hover h3 {
   opacity: 0; /* Hide the heading when overlay is visible */
 }
-
-
 
 /* Responsive Styles */
 
@@ -1088,7 +1038,7 @@ spacing  .about-content p {
 
   .section-title {
     font-size: 2rem;
-    padding-bottom:45px;
+    padding-bottom: 45px;
   }
 
   .circle {
@@ -1128,32 +1078,6 @@ spacing  .about-content p {
   }
 }
 
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-
 /* Why Us Section Styling */
 /* General Section Styling */
 
@@ -1166,10 +1090,7 @@ spacing  .about-content p {
 .why-us-container {
   width: 80%;
   text-align: center; /* Center-align the text */
-  
 }
-
-
 
 /* Why Us Content Styling */
 .why-us h2 {
@@ -1177,7 +1098,7 @@ spacing  .about-content p {
   font-weight: bold; /* Emphasis on the heading */
   text-align: center; /* Center-align the text */
   color: #ffffff; /* White text for contrast on dark backgrounds */
-  margin-bottom:-60px;
+  margin-bottom: -60px;
   margin: 10px auto; /* Reduce margin at the bottom */
 }
 
@@ -1255,8 +1176,8 @@ spacing  .about-content p {
 
 /* For Mobile Devices */
 @media screen and (max-width: 480px) {
-  .why-us{
-    padding-bottom:20px;
+  .why-us {
+    padding-bottom: 20px;
   }
   .why-us h2 {
     font-size: 25px; /* Adjusted size for mobile */
@@ -1272,7 +1193,7 @@ spacing  .about-content p {
 
   .why-us-content {
     justify-content: center;
-    gap:20px;
+    gap: 20px;
   }
 
   .why-us-item {
@@ -1290,11 +1211,6 @@ spacing  .about-content p {
     padding: 10px;
   }
 }
-
-
-
-
-
 
 /* Certifications Section Styling */
 .certificates {
@@ -1342,7 +1258,7 @@ spacing  .about-content p {
 .certificate-btn {
   padding: 10px 24px;
   font-size: 16px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   cursor: pointer;
@@ -1360,7 +1276,7 @@ spacing  .about-content p {
   .certificate-item {
     flex: 1 1 calc(50% - 40px); /* 2 items per row */
   }
-  
+
   .certificates h2 {
     font-size: 24px; /* Slightly smaller font for tablets */
   }
@@ -1409,7 +1325,7 @@ spacing  .about-content p {
     margin-bottom: 15px; /* Add space below the heading */
     color: #333; /* Ensure good readability */
   }
-  
+
   .certificates h2 {
     font-size: 25px; /* Smaller font for compact screens */
     margin: 10px auto; /* Reduce margin to fit smaller screens */
@@ -1417,53 +1333,47 @@ spacing  .about-content p {
   }
 }
 
-
-
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .floating-icons {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .floating-icons a {
-    display: inline-block;
-    text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .floating-icons i {
-    font-size: 30px;
-    color: #fff;
-    background-color: #25D366; /* Default green for WhatsApp */
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+  font-size: 30px;
+  color: #fff;
+  background-color: #25d366; /* Default green for WhatsApp */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .floating-icons a.phone-icon i {
-    background-color: #007BFF; /* Default blue for Phone */
-    font-size: 23px;
+  background-color: #007bff; /* Default blue for Phone */
+  font-size: 23px;
 }
 
 .floating-icons i:hover {
-    transform: scale(1.1);
-    background-color: #34B7F1; /* Slightly lighter shade on hover */
+  transform: scale(1.1);
+  background-color: #34b7f1; /* Slightly lighter shade on hover */
 }
-  
-
-
-
 
 /* General Styling for Contact and Footer */
 .contact-container {
@@ -1542,7 +1452,6 @@ html {
   transform: scale(1.2);
 }
 
-
 /* Responsive Design */
 @media (max-width: 992px) {
   .footer-content {
@@ -1593,43 +1502,36 @@ html {
   }
 }
 
-   
 /* Footer Styles */
 .footer {
-  background-color: #001f54;  /* Dark background */
-  color: #fff;  /* White text */
-  display: flex;  /* Flexbox to center content */
-  justify-content: center;  /* Horizontally center */
-  align-items: center;  /* Vertically center */
-  padding: 20px 0;  /* Add padding */
-  width: 100%;  /* Full width */
-  bottom: 0;  /* Position at the bottom */
+  background-color: #001f54; /* Dark background */
+  color: #fff; /* White text */
+  display: flex; /* Flexbox to center content */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  padding: 20px 0; /* Add padding */
+  width: 100%; /* Full width */
+  bottom: 0; /* Position at the bottom */
   left: 0;
-  font-size: 16px;  /* Adjust font size */
+  font-size: 16px; /* Adjust font size */
 }
 
 /* Hover effect for footer text */
 .footer p:hover {
-  color: #ff6f61;  /* Change text color on hover */
-  cursor: pointer;  /* Show pointer cursor */
+  color: #ff6f61; /* Change text color on hover */
+  cursor: pointer; /* Show pointer cursor */
 }
 
 /* Mobile-specific styles */
 @media (max-width: 600px) {
   .footer p {
-    font-size: 14px;  /* Adjust font size for mobile */
+    font-size: 14px; /* Adjust font size for mobile */
   }
 }
 
 /* Desktop-specific styles */
 @media (min-width: 601px) {
   .footer p {
-    font-size: 16px;  /* Adjust font size for desktop */
+    font-size: 16px; /* Adjust font size for desktop */
   }
 }
-
-
-
-
-
-
