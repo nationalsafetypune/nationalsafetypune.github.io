@@ -1492,21 +1492,6 @@ html {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer Container */
 .footer {
     background: #f8f8f8;
@@ -1519,6 +1504,7 @@ html {
     color: #333;
     line-height: 1.6;
     border-top: 1px solid #ccc;
+  font-size:18px;
 }
 
 /* Footer Columns */
@@ -1570,23 +1556,30 @@ html {
 .tagline {
   color: #003366;
 font-weight:bold;
-  font-size:20px;
+  font-size:30px;
+  font-family:Serif;
+  min-width:330px;
+  text-decoration:underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #37AFE1; /* Light blue underline */
+  line-height:50px;
+  text-underline-offset: 15px; /* Adjust space between text and underline */
 }
 
 .tagline, .one-line {
-    max-width: 320px; /* Ensure consistent width */
+    max-width: 500px; /* Ensure consistent width */
     margin: 0 auto; 
     text-align: center;
   padding-right:50px;
 }
 
-#footer-logo {
-    display: block;
-    margin: 0 auto;
-    width: 160px; /* Adjust size if necessary */
-    height: auto;
-  padding-right:50px;
+.one-line{
+  padding-top:20px;
+  padding-left:20px;
+  font-size:18px;
+  width:270px;
 }
+
 
 /* Footer Bottom */
 .footer-bottom {
@@ -1640,10 +1633,7 @@ font-weight:bold;
         border-bottom: none;
     }
 
-    #footer-logo {
-        width: 140px; /* Reduce size slightly for mobile */
-margin-left:90px;
-    }
+    
   .tagline, .one-line {
     margin-left:50px;
   }
