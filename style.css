@@ -431,6 +431,7 @@ header {
 .carousel-slide {
   display: flex;
   transition: transform 1s ease-in-out;
+  height: 100%;
 }
 
 .carousel-item {
