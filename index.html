@@ -12,6 +12,7 @@
    <meta name="geo.region" content="IN-MH" />
    <meta name="geo.placename" content="Pune, Maharashtra" />
    <meta name="geo.position" content="18.5204;73.8567" />
+   <meta name="theme-color" content="#001f54" />
    <meta property="og:title" content="NFPSE - National Fire Protection and Safety Engineers | Fire Safety Audits, Training & Protection">
    <meta property="og:description" content="Certified fire safety experts at NFPSE offering top-notch fire safety audits, fire protection training, and emergency response services in Pune, Maharashtra, India.">
    <meta property="og:type" content="website">
@@ -57,14 +58,16 @@
       </script>            
      <!-- Main site -->
     <title>National Fire Protection and Safety Engineers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-jxA4TIlmAQkEo/+EuLAUHAGdcTLqqnQfIK3lPW+EoCWzQcwPtQsBN-LezvJxAq3jw7luz+BeXwgFuEo5zGJygA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -72,6 +75,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
+    <!-- AOS Animate On Scroll -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
   </head>
   <body>
     <!-- Loading Screen -->
@@ -88,19 +94,13 @@
       <div class="contact">
         <span>
           <a href="mailto:abpote@yahoo.co.in?subject=Hello&body=Hello">
-            <img
-              src="https://cdn.glitch.global/6f2c3b5d-fe5e-43d5-b653-e4fc3e1fcfbd/mail.svg?v=1736538204019"
-              alt="Email"
-            />
+            <i class="fas fa-envelope"></i>
           </a>
         </span>
-        <div class="name">abpote@yahoo.co</div>
+        <div class="name">abpote@yahoo.co.in</div>
         <span>
           <a href="tel:+918087029845">
-            <img
-              src="https://cdn.glitch.global/6f2c3b5d-fe5e-43d5-b653-e4fc3e1fcfbd/phone.svg?v=1736538206464"
-              alt="Phone"
-            />
+            <i class="fas fa-phone"></i>
           </a>
         </span>
         <div class="name">+918087029845</div>
@@ -108,16 +108,10 @@
 
       <div class="social-icons">
         <a href="https://www.instagram.com/nfprotections?igsh=c3VrNXZva2V0NDhl">
-          <img
-            src="https://cdn.glitch.global/6f2c3b5d-fe5e-43d5-b653-e4fc3e1fcfbd/instagram.svg?v=1736538201653"
-            alt="Instagram"
-          />
+          <i class="fab fa-instagram"></i>
         </a>
         <a href="https://www.linkedin.com/company/nfprotection/">
-          <img
-            src="https://cdn.glitch.global/6f2c3b5d-fe5e-43d5-b653-e4fc3e1fcfbd/linkedin.svg?v=1736538198484"
-            alt="LinkedIn"
-          />
+          <i class="fab fa-linkedin"></i>
         </a>
       </div>
     </div>
@@ -127,11 +121,11 @@
       <div class="logo">
         <img
           src="Short_Logo.png"
-          alt="Logo"
+          alt="NFPSE Logo – National Fire Protection and Safety Engineers"
         />
         <img
           class="logo-name"
-          src="NFP&SE/Logo_Name.png"
+          src="NFPSE/Logo_Name.png"
           alt="Logo Name"
         />
       </div>
@@ -186,7 +180,7 @@
     <section class="about-section" id="about">
       <div class="container">
         <!-- Content Section -->
-        <div class="about-content">
+        <div class="about-content" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
           <h1>ABOUT US</h1>
           <p>
             We are dedicated to becoming dynamic leaders in fire prevention and
@@ -207,21 +201,21 @@
         </div>
 
         <!-- Image Section -->
-        <div class="about-image">
+        <div class="about-image" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
           <div class="collage">
             <img
-              src="NFP&SE/About_1.jpg"
+              src="NFPSE/About_1.jpg"
               alt="Gif NFPSE performing fire risk assessment for fire prevention in Maharashtra"
               class="gif"
             />
             <div class="small-images">
               <img
-                src="NFP&SE/About_2.jpg"
+                src="NFPSE/About_2.jpg"
                 alt="Certified National Fire Protection and Safety Engineers at NFPSE ensuring fire compliance"
               />
               <img
-                src="about_us3.jpg"
-                alt="NFP&SE NFPSE NFPROTECTION Fire protection services by NFPSE installing safety equipment in Pune businesses"
+                src="NFPSE/About3.png"
+                alt="NFPSE Fire protection services by NFPSE installing safety equipment in Pune businesses"
               />
             </div>
           </div>
@@ -229,17 +223,17 @@
       </div>
     </section>
     <div class="counter-container">
-      <div class="counter-item">
+      <div class="counter-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="0" data-aos-once="true">
         <span class="counter" data-target="200">0</span>
         <span class="plus-sign">+</span>
         <p>Projects completed.</p>
       </div>
-      <div class="counter-item">
+      <div class="counter-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150" data-aos-once="true">
         <span class="counter" data-target="30">0</span>
         <span class="plus-sign">+</span>
         <p>Clients served.</p>
       </div>
-      <div class="counter-item">
+      <div class="counter-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300" data-aos-once="true">
         <span class="counter" data-target="15">0</span>
         <span class="plus-sign">+</span>
         <p>Number of Years</p>
@@ -248,81 +242,45 @@
 
     <!-- Esteemed Guests Section -->
     <section id="esteemed-guests" class="esteemed-guests-section">
-      <h1 class="heading">ESTEEMED CLIENTS</h1>
+      <h1 class="heading" data-aos="fade-up" data-aos-duration="700" data-aos-once="true">ESTEEMED CLIENTS</h1>
 
       <div class="carousel">
         <!-- Guest Logos in Boxes -->
         <div class="logo-box">
-          <img
-            src="https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/chembond%20logo_prev_ui.png?v=1737010766550"
-            alt="Chembond – Esteemed Client of NFPSE"
-          />
+          <img src="NFPSE/client%20logo/chembond%20logo.png" alt="Chembond – Client of NFPSE" />
         </div>
         <div class="logo-box">
-          <img
-            src="https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/COTMAC%20ELECTRONICS%20PVT.%20LTD.%20logo_prev_ui.png?v=1737010767184"
-            alt="Cotmac Electronics – Esteemed Client of NFPSE"
-         />
+          <img src="NFPSE/client%20logo/COTMAC%20ELECTRONICS%20PVT.%20LTD..png" alt="Cotmac Electronics – Client of NFPSE" />
         </div>
         <div class="logo-box">
-          <img
-            src=" https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/Tata_Motors_Passenger_Vehicles_Limited_logo-removebg-preview.png?v=1737010826322"
-            alt="Tata Motors Passenger Vehicles Limited – Esteemed Client of NFPSE"          
-         />
+          <img src="NFPSE/client%20logo/Tata_Motors_Passenger_Vehicles_Limited.png" alt="Tata Motors Passenger Vehicles – Client of NFPSE" />
         </div>
         <div class="logo-box">
-          <img
-            src="https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/herman%20logo.png?v=1737010780338"
-            alt="NFPSE National Fire Protection National Fire Protection and Safety Engineers fire safety fire protection fire safety audits fire protection services fire training fire drills fire risk assessment fire prevention emergency response workplace safety fire compliance fire safety engineers ISO-certified fire safety fire safety solutions Pune Maharashtra India certified fire safety experts fire safety training fire protection equipment fire safety compliance fire emergency preparedness"
-          />
+          <img src="NFPSE/client%20logo/herman%20logo.png" alt="Herman – Client of NFPSE" />
         </div>
         <div class="logo-box">
-          <img
-            src="https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/Ipca_Labs_logo.png?v=1737010785716"
-            alt="NFPSE National Fire Protection National Fire Protection and Safety Engineers fire safety fire protection fire safety audits fire protection services fire training fire drills fire risk assessment fire prevention emergency response workplace safety fire compliance fire safety engineers ISO-certified fire safety fire safety solutions Pune Maharashtra India certified fire safety experts fire safety training fire protection equipment fire safety compliance fire emergency preparedness"
-          />
+          <img src="NFPSE/client%20logo/Ipca_Labs.png" alt="Ipca Laboratories – Client of NFPSE" />
         </div>
         <div class="logo-box">
-          <img
-            src="https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/kimberly%20logo_prev_ui.png?v=1737010798249"
-            alt="NFPSE National Fire Protection National Fire Protection and Safety Engineers fire safety fire protection fire safety audits fire protection services fire training fire drills fire risk assessment fire prevention emergency response workplace safety fire compliance fire safety engineers ISO-certified fire safety fire safety solutions Pune Maharashtra India certified fire safety experts fire safety training fire protection equipment fire safety compliance fire emergency preparedness"
-          />
+          <img src="NFPSE/client%20logo/kimberly.png" alt="Kimberly Clark – Client of NFPSE" />
         </div>
         <div class="logo-box">
-          <img
-            src="https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/Maharashtra_State_Power_Generation_Co._Ltd._logo-removebg-preview.png?v=1737010801839"
-            alt="NFPSE National Fire Protection National Fire Protection and Safety Engineers fire safety fire protection fire safety audits fire protection services fire training fire drills fire risk assessment fire prevention emergency response workplace safety fire compliance fire safety engineers ISO-certified fire safety fire safety solutions Pune Maharashtra India certified fire safety experts fire safety training fire protection equipment fire safety compliance fire emergency preparedness"
-          />
+          <img src="NFPSE/client%20logo/Maharashtra_State_Power_Generation_Co._Ltd..png" alt="Maharashtra State Power Generation Co. – Client of NFPSE" />
         </div>
         <div class="logo-box">
-          <img
-            src="https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/Mahindra___Mahindra_Limited_logo-removebg-preview.png?v=1737010807740"
-            alt="NFPSE National Fire Protection National Fire Protection and Safety Engineers fire safety fire protection fire safety audits fire protection services fire training fire drills fire risk assessment fire prevention emergency response workplace safety fire compliance fire safety engineers ISO-certified fire safety fire safety solutions Pune Maharashtra India certified fire safety experts fire safety training fire protection equipment fire safety compliance fire emergency preparedness"
-          />
+          <img src="NFPSE/client%20logo/Mahindra___Mahindra_Limited.png" alt="Mahindra & Mahindra – Client of NFPSE" />
         </div>
         <div class="logo-box">
-          <img
-            src="https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/SUPREME_TREON_PRIVATE_LIMITED_logo-removebg-preview.png?v=1737010812036"
-            alt="NFPSE National Fire Protection National Fire Protection and Safety Engineers fire safety fire protection fire safety audits fire protection services fire training fire drills fire risk assessment fire prevention emergency response workplace safety fire compliance fire safety engineers ISO-certified fire safety fire safety solutions Pune Maharashtra India certified fire safety experts fire safety training fire protection equipment fire safety compliance fire emergency preparedness"
-          />
+          <img src="NFPSE/client%20logo/SUPREME_TREON_PRIVATE_LIMITED.png" alt="Supreme Treon – Client of NFPSE" />
         </div>
         <div class="logo-box">
-          <img
-            src="https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/Tata_Autocomp_Systems_Ltd._logo-removebg-preview.png?v=1737010816411"
-            alt="NFPSE National Fire Protection National Fire Protection and Safety Engineers fire safety fire protection fire safety audits fire protection services fire training fire drills fire risk assessment fire prevention emergency response workplace safety fire compliance fire safety engineers ISO-certified fire safety fire safety solutions Pune Maharashtra India certified fire safety experts fire safety training fire protection equipment fire safety compliance fire emergency preparedness"
-          />
+          <img src="NFPSE/client%20logo/Tata_Autocomp_Systems_Ltd..png" alt="Tata Autocomp Systems – Client of NFPSE" />
         </div>
         <div class="logo-box">
-          <img
-            src="https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/Tata_Motors_Limited_logo-removebg-preview.png?v=1737010821888"
-            alt="NFPSE National Fire Protection National Fire Protection and Safety Engineers fire safety fire protection fire safety audits fire protection services fire training fire drills fire risk assessment fire prevention emergency response workplace safety fire compliance fire safety engineers ISO-certified fire safety fire safety solutions Pune Maharashtra India certified fire safety experts fire safety training fire protection equipment fire safety compliance fire emergency preparedness"
-          />
+          <img src="NFPSE/client%20logo/Tata_Motors_Limited.png" alt="Tata Motors – Client of NFPSE" />
         </div>
         <div class="logo-box">
-          <img
-            src="https://cdn.glitch.global/20ef69c3-07b3-4f13-a809-c90716d38fc8/Fiat%20India%20Automobiles%20Pvt%20Ltd_prev_ui.png?v=1737010771546"
-            alt="NFPSE National Fire Protection National Fire Protection and Safety Engineers fire safety fire protection fire safety audits fire protection services fire training fire drills fire risk assessment fire prevention emergency response workplace safety fire compliance fire safety engineers ISO-certified fire safety fire safety solutions Pune Maharashtra India certified fire safety experts fire safety training fire protection equipment fire safety compliance fire emergency preparedness"
-          />
+          <img src="NFPSE/client%20logo/Fiat%20India%20Automobiles%20Pvt%20Ltd.png" alt="Fiat India Automobiles – Client of NFPSE" />
         </div>
       </div>
     </section>
@@ -330,15 +288,14 @@
     <!-------------------------------------------------- Services Section ----------------------------------------------------------->
 
     <section class="services-section" id="services">
-      <h2 class="section-title">OUR SERVICES</h2>
+      <h2 class="section-title" data-aos="fade-up" data-aos-duration="700" data-aos-once="true">OUR SERVICES</h2>
       <div class="services-container">
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="0" data-aos-once="true">
           <div class="circle">🔥</div>
           <div class="box-content">
-            <h3>Fire Safety Audits</h3>
+            <h3>Standard based Fire and Safety Audits</h3>
             <p>
-              Design, supply, and installation of hydrants, sprinklers, foam,
-              and gas suppression systems
+              National standard based industrial audits and reports for fire and safety compliance.
             </p>
             <div class="hover-overlay">
               <p>
@@ -351,7 +308,7 @@
             </div>
           </div>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100" data-aos-once="true">
           <div class="circle">🛠️</div>
           <div class="box-content">
             <h3>Occupational Safety and Health Audits</h3>
@@ -368,11 +325,11 @@
             </div>
           </div>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200" data-aos-once="true">
           <div class="circle">📜</div>
           <div class="box-content">
             <h3>Risk Assessment and Hazard Studies</h3>
-            <p>Dispersion modeling, HAZOP, and HIRA studies.</p>
+            <p>Dispersion modeling, HAZOP, and HIRA studies are just a few examples here</p>
             <div class="hover-overlay">
               <p>
                 Our specialized risk assessments identify potential
@@ -382,7 +339,7 @@
             </div>
           </div>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300" data-aos-once="true">
           <div class="circle">💡</div>
           <div class="box-content">
             <h3>Fire Fighting Systems Design and Installation</h3>
@@ -399,7 +356,7 @@
             </div>
           </div>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="400" data-aos-once="true">
           <div class="circle">🏢</div>
           <div class="box-content">
             <h3>Industrial Emergency Signage and Support</h3>
@@ -417,7 +374,7 @@
             </div>
           </div>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500" data-aos-once="true">
           <div class="circle">📚</div>
           <div class="box-content">
             <h3>Training and Emergency Management</h3>
@@ -441,13 +398,13 @@
 
     <section class="why-us" id="why-us">
       <div class="container">
-        <h2 class="section-title">WHY CHOOSE US?</h2>
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="700" data-aos-once="true">WHY CHOOSE US?</h2>
         <div class="why-us-content">
           <div class="why-us-item">
             <div class="why-us-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewbox="0 0 24 24"
+                viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
@@ -457,7 +414,7 @@
                 <path d="M12 2L3 6v6c0 5 3 9 9 9s9-4 9-9V6l-9-4z"></path>
               </svg>
             </div>
-            <p class="why-us-text">
+            <p class="why-us-text" data-aos="fade-up" data-aos-duration="700" data-aos-delay="0" data-aos-once="true">
               Over a decade of expertise in fire safety solutions.
             </p>
           </div>
@@ -466,7 +423,7 @@
             <div class="why-us-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewbox="0 0 24 24"
+                viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
@@ -479,7 +436,7 @@
                 ></path>
               </svg>
             </div>
-            <p class="why-us-text">
+            <p class="why-us-text" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100" data-aos-once="true">
               Compliance with national and international safety standards.
             </p>
           </div>
@@ -488,7 +445,7 @@
             <div class="why-us-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewbox="0 0 24 24"
+                viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
@@ -501,7 +458,7 @@
                 ></path>
               </svg>
             </div>
-            <p class="why-us-text">
+            <p class="why-us-text" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200" data-aos-once="true">
               End-to-end services from design to maintenance.
             </p>
           </div>
@@ -510,7 +467,7 @@
             <div class="why-us-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewbox="0 0 24 24"
+                viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
@@ -523,7 +480,7 @@
                 <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
               </svg>
             </div>
-            <p class="why-us-text">
+            <p class="why-us-text" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300" data-aos-once="true">
               Highly trained and experienced professionals.
             </p>
           </div>
@@ -532,7 +489,7 @@
             <div class="why-us-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewbox="0 0 24 24"
+                viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
@@ -544,7 +501,7 @@
                 <line x1="6" y1="20" x2="6" y2="16"></line>
               </svg>
             </div>
-            <p class="why-us-text">
+            <p class="why-us-text" data-aos="fade-up" data-aos-duration="700" data-aos-delay="400" data-aos-once="true">
               Proven track record of successful projects and satisfied clients
             </p>
           </div>
@@ -565,7 +522,7 @@
                 <line x1="12" y1="17" x2="12" y2="21"></line>
               </svg>
             </div>
-            <p class="why-us-text">
+            <p class="why-us-text" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500" data-aos-once="true">
               Continuous innovation with cutting-edge technology.
             </p>
           </div>
@@ -577,34 +534,34 @@
 
     <div class="certificates" id="certifications">
       <div class="container">
-        <h2 class="section-title">CERTIFICATES</h2>
-        <div class="certificate-item" id="certificate1">
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="700" data-aos-once="true">CERTIFICATES</h2>
+        <div class="certificate-item" id="certificate1" data-aos="fade-up" data-aos-duration="700" data-aos-delay="0" data-aos-once="true">
           <div class="certificate-preview">
             <img
-              src="NFP&SE/Cert1.png"
+              src="NFPSE/Cert1.png"
               alt="Certificate 1 Preview"
               class="certificate-image"
             />
           </div>
           <button
             class="certificate-btn"
-            onclick="openPDF('NFP&SE/Udyam_Cert.pdf')"
+            onclick="openPDF('NFPSE/Udyam_Cert.pdf')"
           >
             Open Certificate
           </button>
         </div>
 
-        <div class="certificate-item" id="certificate2">
+        <div class="certificate-item" id="certificate2" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200" data-aos-once="true">
           <div class="certificate-preview">
             <img
-              src="NFP&SE/Cert_2.png"
+              src="NFPSE/Cert_2.png"
               alt="Certificate 2 Preview"
               class="certificate-image"
             />
           </div>
           <button
             class="certificate-btn"
-            onclick="openPDF('NFP&SE/Fire_Govt.pdf')"
+            onclick="openPDF('NFPSE/Fire_Govt.pdf')"
           >
             Open Certificate
           </button>
@@ -630,13 +587,13 @@
     <footer>
     <div class="footer" id="contact">
         <!-- Column 1: Company Information -->
-        <div class="footer-column">
+        <div class="footer-column" data-aos="fade-up" data-aos-duration="700" data-aos-delay="0" data-aos-once="true">
             <p class="tagline">"We Serve To Save"</p>
             <p class ="one-line">Provide expert fire safety solutions, from risk assessments to installations and emergency preparedness with excellence. </p>
         </div>
 
         <!-- Column 2: Quick Links -->
-        <div class="footer-column">
+        <div class="footer-column" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100" data-aos-once="true">
             <h3>Quick Links</h3>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -648,7 +605,7 @@
         </div>
 
         <!-- Column 3: Services -->
-        <div class="footer-column">
+        <div class="footer-column" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200" data-aos-once="true">
             <h3>Our Services</h3>
             <ul>
                 <li>Fire Risk Assessment</li>
@@ -660,7 +617,7 @@
         </div>
 
         <!-- Column 4: Social Media -->
-        <div class="footer-column social-media">
+        <div class="footer-column social-media" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300" data-aos-once="true">
             <h3>Contact Us</h3>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/company/nfprotection/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -669,12 +626,13 @@
                 <a href="mailto:abpote@yahoo.co.in"><i class="fas fa-envelope"></i></a>
                 <a href="https://wa.me/8087029845" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
+            <p class="footer-contact-note">Reach out to us on any of these platforms — we're always available to help with your fire safety needs.</p>
         </div>
     </div>
 
     <!-- Footer Bottom -->
     <div class="footer-bottom">
-        <p>&copy; 2025 NFP&SE. All rights reserved.</p>
+        <p>&copy; 2026 NFPSE. All rights reserved.</p>
     </div>
 </footer>
 
