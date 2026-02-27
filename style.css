@@ -428,7 +428,7 @@ input, select, textarea { font-family: var(--font); }
   .svc-detail { grid-template-columns:1fr; }
   .svc-detail.rev .svc-d-icon { order:0; }
   .svc-detail.rev .svc-d-body { order:0; }
-  .svc-d-icon { width:120px; height:120px; font-size:3rem; }
+  .svc-d-icon { width:120px; height:120px; font-size:3rem; margin:0 auto; }
   .cert-grid { grid-template-columns:1fr; max-width:520px; }
   .contact-grid { grid-template-columns:repeat(2,1fr); }
   .testi-grid { grid-template-columns:1fr; }
@@ -464,7 +464,7 @@ input, select, textarea { font-family: var(--font); }
   .br-d { display:none; }
   .stats-4 { flex-direction:column; gap:0; }
   .stats-4 .stat-item { border:none; border-bottom:1px solid var(--border-d); padding:14px 0; }
-  .pg-hero { padding:calc(var(--hh)+48px) 0 44px; }
+  .pg-hero { padding:calc(var(--hh)+72px) 0 44px; }
   .why-full-card { flex-direction:column; }
   .testi-grid { grid-template-columns:1fr; }
 }
